@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css?family=Anton&display=swap');
+
+* {
+    font-family: 'Anton', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+h1 {
+    line-height: 100px;
+    font-size: 40px;
+    text-align: center;
+}
+
+header > h1 {
+    color: seashell;
+    vertical-align: middle;
+}
+
+footer {
+    line-height: 100px;
+    font-size: 40px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+body {
+    background: skyblue;
+}
+
+#buttons {
+    position: absolute;
+    left: 30%;
+    top: 8%;
+}
+
+#buttons > .button {
+    display: flex;
+    float: left;
+    font-size: 16px;
+    padding: 8px;
+}
+
+div#container > div {
+    border: 1px solid gray;
+    box-sizing: border-box;
+    background-color: rgb(255, 255, 255);
+}
+
+div#container >div:hover {
+    background-color: rgb(221, 221, 221);
+    transition: .3s;
+}
+
+#container {
+    box-sizing: border-box;
+    border: 1px solid black;
+    width: 756px;
+    height: 756;
+    display: grid;
+    margin: 0 auto;
+}
+
+#change {
+    background-color: rgb(146, 0, 0);
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 15%;
+    left: 18%;
+}
+
+.picker {
+    position: absolute;
+    left: 22%;
+    top: 10%;
+    text-align: left;
+}
+
+.picker .input{
+    display: block;
+}

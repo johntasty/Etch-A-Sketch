@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Etch A Sketch</title>
+        <link rel='stylesheet' href="sketch.css">
+    </head>
+    <body>
+        <h1>
+            Etch A Sketch
+        </h1>
+        <div class="picker">
+            Red<input class="input" type="range" id="slideRed" min="0" max="255" value="146">
+            Green<input class="input" type="range" id="slideGreen" min="0" max="255" value="0">
+            Blue<input class="input" type="range" id="slideBlue" min="0" max="255" value="0">
+        </div>
+        <div id="change"></div>
+        <div id="buttons">
+            <button class="button" id="reset">Reset</button>
+            <button class="button" id="scale">Scale</button>
+        </div>
+        <div id="container" class="flex-container"></div>
+        <script type="text/javascript" src='sketch.js'>
+        </script>
+        <footer>Created by his owner</footer>
+    </body>
+</html>
