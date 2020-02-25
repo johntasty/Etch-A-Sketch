@@ -37,10 +37,12 @@ body {
 }
 
 #buttons > .button {
-    display: flex;
-    float: left;
+    text-transform: uppercase;
+    vertical-align: middle;
     font-size: 16px;
     padding: 8px;
+    height: 50px;
+    width: 100px;
 }
 
 div#container > div {
@@ -57,28 +59,49 @@ div#container >div:hover {
 #container {
     box-sizing: border-box;
     border: 1px solid black;
-    width: 756px;
-    height: 756px;
+    width: 62vw;
+    height: 62vw;
+    max-width: 745px;
+    max-height: 745px;
     display: grid;
     margin: 0 auto;
+    background-color: white;
 }
 
 #change {
     background-color: rgb(146, 0, 0);
     height: 50px;
     width: 50px;
-    position: absolute;
-    top: 15%;
-    left: 18%;
+    vertical-align: middle;
+    margin: 5px auto;
 }
 
-.picker {
-    position: absolute;
-    left: 22%;
-    top: 10%;
-    text-align: left;
-}
+
 
 .picker .input{
-    display: block;
+    margin: 10px auto;
+    vertical-align: middle;
+    height: 50px;
+    width: 100px;
+}
+
+@media (max-width: 745px) {
+    header {
+        font-size: 25px;
+    }
+
+    #container {
+        width: 99vw;
+        height: 99vw;
+    }
+
+    footer {
+        padding: 10px;
+        font-size: 25px;
+    }
+}
+@media (max-width: 745px) {
+    .picker > .input {
+        font-size: 15px;
+    }
 }
