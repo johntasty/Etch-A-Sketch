@@ -31,9 +31,9 @@ body {
 }
 
 #buttons {
-    position: absolute;
-    left: 30%;
-    top: 8%;
+    vertical-align: middle;
+    margin: 10px auto;
+    text-align: center;
 }
 
 #buttons > .button {
